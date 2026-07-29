@@ -4,6 +4,17 @@ import Icon from './Icon'
 export default function PlantCare({plant, onGo}){
   return (
     <div className="page-scroll">
+      <div className="section-label">Datos de cultivo</div>
+      <table className="spec">
+        <tbody>
+          <tr><td className="k">Profundidad mín.</td><td className="v">{plant.profundidad}</td></tr>
+          <tr><td className="k">Luz</td><td className="v">{plant.luz}</td></tr>
+          <tr><td className="k">Riego</td><td className="v">{plant.riego}</td></tr>
+          <tr><td className="k">Siembra</td><td className="v">{plant.siembra}</td></tr>
+          <tr><td className="k">Cosecha</td><td className="v">{plant.cosecha}</td></tr>
+        </tbody>
+      </table>
+      <hr className="entry-divider"/>
       <div className="section-label">Cuidados</div>
       <ul className="care-list">
         {plant.cuidados.map((c,i)=><li key={i}>{c}</li>)}
@@ -26,8 +37,6 @@ export default function PlantCare({plant, onGo}){
           </>}
         </>
       }
-
-      <div className="marginal-note">{plant.nota}</div>
 
       <div className="footer-ref">
         Ver también: <a onClick={()=>onGo("companions")}>Asociaciones</a> · <a onClick={()=>onGo("prevention")}>Prevención de plagas</a>
