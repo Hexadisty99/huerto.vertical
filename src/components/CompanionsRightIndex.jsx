@@ -50,7 +50,6 @@ export default function CompanionsRightIndex({onGo}){
             <div style={{display:"flex", alignItems:"center", gap:10, marginBottom:4}}>
               <span style={{fontSize:22}}>{s.icon}</span>
               <span style={{fontFamily:"Fraunces", fontWeight:600, fontSize:18, color:"var(--ink)"}}>{s.title}</span>
-              <span style={{marginLeft:"auto", fontFamily:"JetBrains Mono", fontSize:11, color:"var(--sepia)"}}>{s.count} entradas</span>
             </div>
             <p style={{margin:0, fontSize:14, color:"var(--ink-soft)", paddingLeft:36}}>{s.desc}</p>
           </div>
