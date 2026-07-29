@@ -13,7 +13,7 @@ export default function PreventionRight(){
 
       <div className="section-label">Calendario de vigilancia</div>
       <div style={{display:"flex", gap:6, marginBottom:14}}>
-        {["Pri","Ver","Oto","Inv"].map((s,i)=>(
+        {["Primavera","Verano","Otoño","Invierno"].map((s,i)=>(
           <div key={s} style={{flex:1, textAlign:"center", padding:"8px 4px", border:"1px solid rgba(90,60,20,0.2)", borderRadius:4, background: i<2 ? "rgba(74,122,83,0.08)" : "transparent"}}>
             <div style={{fontFamily:"JetBrains Mono", fontSize:10, color:"var(--sepia)"}}>{s}</div>
             <div style={{fontSize:11, marginTop:3}}>{i<2 ? "alerta alta" : "alerta baja"}</div>
